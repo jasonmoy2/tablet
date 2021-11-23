@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="image/png" href="../portfolio/images/icon.png"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/html5reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Home</title>
+    </head>
+
+    <body>
+      <a class = "skip" href="#main">Skip to Main Content</a>
+        <!--Top Navigation Bar with Hamburger Menu-->
+        <div class="topnav">
+          <a href="index.html" class="active" id="logo"> <img src="../portfolio/images/logo.png" alt="logo" class="logo"></a>
+          <div id="myLinks">
+              <ul>
+                  <li><a class="links" id="current" href="index.html">Home</a></li>
+                  <li><a class="links" href="australia.html">Australia</a></li>
+                  <li><a class="links" href="theletters.html">The Letters</a></li>
+                  <li><a class="links" href="about.html">Reflection</a></li>
+                  <li><a class="links" href="contact.html">Contact</a></li>
+              </ul>
+          </div>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+      </div>
+
+        <main class="space">
+            <h1>Welcome!</h1>
+
+            <p>My name is Jason Moy! I have been on a journey to learn more about my family history and how I came to be the person I am today. 
+            So this is the story about my discovery of my Great Grandfather, Rafael Mok. Follow along with me!
+            </p>
+          
+          <div class="card-elements" id="main">
+            <div class="card">
+              <img src="images/australia1.jpg" class="home-img" alt="Australia">
+              <div class="card-container">
+                <header><h2>Australia</h2></header>
+                <ul>
+                  <li>In the year of 2018, my family and I ventured to the down under. Here, I saw some amazing landscapes and learned so much about my family history.</li>
+                </ul>
+                <a href="australia.html" class="button">Read More</a>
+              </div>
+            </div>
+
+            <div class="card">
+              <img src="images/letter5.png" class="home-img" alt="The Letters">
+              <div class="card-container">
+                <header><h2>The Letters</h2></header>
+                <ul>
+                  <li>In the year of 2019, when cleaning my Por Por's basement, I found letters from my great grandfather dating back to the 1960s from both China and Cuba.</li>
+                </ul>
+                <a href="theletters.html" class="button">Read More</a>
+              </div>
+            </div>
+
+            <div class="card">
+                <img src="images/aboutme1.jpg" class="home-img" alt="About Me">
+                <div class="card-container">
+                  <header><h2>About</h2></header>
+                    <ul>
+                      <li>Since discovering all that I have, these findings and experiences have allowed me to reflect and consider my intersectional identity.</li>
+                    </ul>
+                  <a href="about.html" class="button">Read More</a>
+                </div>
+            </div>
+          </div>
+        </main>
+        <script>
+          function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+              x.style.display = "none";
+            } else {
+              x.style.display = "block";
+            }
+          }
+        </script>
+    </body>
+
+    <footer>
+        <p>This is a story of family and discovery!<br/>
+          &copy; Jason Moy - Web Design 2021</p>
+      </footer>
+</html>

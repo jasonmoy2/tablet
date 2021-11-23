@@ -1,0 +1,527 @@
+/* Starter code */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+main.space {
+    margin: 0px 20px;
+}
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+    margin: 75px 0px 75px 0px;
+    font-family: 'Zen Old Mincho', serif;
+    color: #be925e;
+}
+
+h2 {
+    font-size: 20px;
+    padding-left: 5px;
+}
+
+ul {
+    font-size: 12px;
+    margin: 0px 5px 10px 5px;
+}
+
+.space p {
+    text-align: center;
+    padding-bottom: 75px;
+}
+
+a.skip{
+    background: white;
+    left: 0;
+    padding: 6px;
+    position: absolute;
+    top: -40px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+  }
+  
+a.skip:focus{
+    top:20px;
+  }
+
+img.logo {
+    height: 19px;
+}
+
+/* Top Navigation Bar with Hamburger Menu */
+.mobile-container {
+    max-width: 480px;
+    margin: auto;
+    background-color: #555;
+    height: 500px;
+    color: white;
+    border-radius: 10px;
+}
+  
+.topnav {
+    overflow: hidden;
+    background-color: #545658;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left:0;
+}
+  
+.topnav #myLinks {
+    display: none;
+}
+  
+.topnav a {
+    color: #ffffff;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+  
+.topnav a.icon {
+    background: #545658;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+  
+a.links:hover {
+    font-weight: bold;
+    background-color: #f1b976;
+    color: #545658;
+}
+
+a.links:hover::before {
+    content: ">>"
+}
+
+#current{
+    font-weight: bold;
+    background-color: #ddd;
+    color: #545658;
+}
+  
+.active {
+    background-color: #be925e;
+    color: #ffffff;
+}
+
+/* Card Elements */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+  
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+  
+.container {
+    padding: 2px 16px;
+}
+
+.home-img {
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    height: 75%;
+}
+
+.button {
+    background-color: #be925e; 
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    margin: auto;
+    width: 50%;
+  }
+
+/* Grid layout  */
+.container {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto auto auto auto auto auto auto;
+}
+
+/* Australia page grid */
+p.description {
+    grid-column: 1 / span 4;
+    grid-row: 1 / span 1;
+    text-align: left;
+    font-size: 12px;
+    padding: 20px 0px;
+}
+
+h2.number {
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+    font-size: 40px;
+    font-family: 'Zen Old Mincho', serif;
+    color: #be925e;
+}
+
+h1.title {
+    grid-column: 2 / span 4;
+    grid-row: 3 / span 1;
+    font-size: 60px;
+    margin: 10px 0px 40px 0px;
+    text-align: left;
+    font-family: 'Zen Old Mincho', serif;
+    color: #000000;
+}
+
+.aus-paragraph1{
+    /* text-align: left; */
+    grid-column: 1 / span 4;
+    grid-row: 4 / span 1;
+    overflow: hidden;
+    padding-bottom: 10px;
+}
+
+.family-img {
+    grid-column: 1 / span 4;
+    grid-row: 5 / span 1;
+    margin: 10px 0px;
+}
+
+.aus-paragraph2 {
+    /* text-align: left; */
+    grid-column: 1 / span 4;
+    grid-row: 6 / span 1;
+}
+
+.mom-cousin-img {
+    grid-column: 1 / span 4;
+    grid-row: 7 / span 1;
+    margin: 10px 0px;
+}
+
+.aus-paragraph3 {
+    grid-column: 1 /span 4;
+    grid-row: 8 / span 1;
+}
+
+.family-cousin-img {
+    grid-column: 1 /span 4;   
+    grid-row: 9 / span 1;
+    margin: 10px 0px;
+}
+
+.aus-link {
+    grid-column: 4 / span 1;
+    grid-row: 10 / span 1;
+    text-align: right;
+    padding-bottom: 10px;
+    font-family: 'Zen Old Mincho', serif;
+    color: #be925e;
+}
+
+/* The Letters gird layout */
+.let-paragraph1 {
+    grid-column: 1 / span 4;
+    grid-row: 4 / span 1;
+    overflow: hidden;
+    padding-bottom: 10px;
+}
+
+.mok-family-img {
+    grid-column: 1 / span 4;
+    grid-row: 5 / span 1;
+    margin: 10px 0px;
+}
+
+.let-paragraph2 {
+    grid-column: 1 / span 4;
+    grid-row: 6 / span 1;
+}
+
+.rafael-img {
+    grid-column: 1 / span 4;
+    grid-row: 7 / span 1;
+    margin: 10px 0px;
+}
+
+.let-paragraph3 {
+    grid-column: 1 /span 4;
+    grid-row: 8 / span 1;
+}
+
+.letter2 {
+    grid-column: 1 / span 2;
+    grid-row: 9 / span 1;
+    margin-right: 5px;
+}
+
+.letter3 {
+    grid-column: 3 / span 4;
+    grid-row: 9 / span 1;
+    margin-right: 5px;
+    overflow: hidden;
+}
+
+.letter4 {
+    grid-column: 1 / span 4;
+    grid-row: 10 / span 1;
+}
+
+.letter5 {
+    grid-column: 1 / span 2;
+    grid-row: 11 / span 1;
+    margin-right: 5px;
+}
+
+.letter6 {
+    grid-column: 3 / span 4;
+    grid-row: 11 / span 1;
+    margin-right: 5px;
+    overflow: hidden;
+}
+
+.let-link {
+    grid-column: 4 / span 1;
+    grid-row: 12 / span 1;
+    text-align: right;
+    padding-bottom: 10px;
+    font-family: 'Zen Old Mincho', serif;
+    color: #be925e;
+}
+
+/* About grid layout */
+.portrait {
+    grid-column: 1 / span 4;
+    grid-row: 4 / span 1;
+    overflow: hidden;
+    padding-bottom: 10px;
+}
+
+.about-paragraph {
+    grid-column: 1 / span 4;
+    grid-row: 5 / span 1;
+    margin: 10px 0px;
+}
+
+/* Contact */
+form {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+
+
+
+
+/* Tablet view */
+@media screen and (min-width: 1000px) {
+    h1 {
+        font-size: 80px;
+        text-align: center;
+        margin: 150px 0px 100px 0px;
+        font-family: 'Zen Old Mincho', serif;
+        color: #be925e;
+    }
+
+    .space p {
+        text-align: center;
+        margin-bottom: 110px;
+    }
+    
+    /* Home */
+    .card {
+        width: 30%;
+        height: 575px;
+        margin: 20px;
+    }
+
+    .home-img {
+        width: 100%;
+        height: 400px;    
+    }
+
+    .card-elements {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .container {
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        grid-template-rows: auto auto auto auto auto;
+    }
+
+    /* Australia */
+    p.description {
+        grid-column: 2 / span 3;
+        grid-row: 1 / span 1;
+        text-align: left;
+        font-size: 14px;
+        padding: 20px 0px;
+    }
+    
+    h2.number {
+        grid-column: 3 / span 1;
+        grid-row: 2 / span 1;
+        font-size: 50px;
+        font-family: 'Zen Old Mincho', serif;
+        color: #be925e;
+    }
+    
+    h1.title {
+        grid-column: 3 / span 4;
+        grid-row: 3 / span 1;
+        font-size: 70px;
+        margin: 10px 0px 40px 0px;
+        text-align: left;
+        font-family: 'Zen Old Mincho', serif;
+        color: #000000;
+    }
+    
+    .aus-paragraph1{
+        grid-column: 2 / span 3;
+        grid-row: 4 / span 1;
+        overflow: hidden;
+        padding-bottom: 10px;
+    }
+    
+    .family-img {
+        grid-column: 2 / span 3;
+        grid-row: 5 / span 1;
+        margin: 10px 0px;
+    }
+    
+    .aus-paragraph2 {
+        grid-column: 2 / span 3;
+        grid-row: 6 / span 1;
+    }
+    
+    .mom-cousin-img {
+        grid-column: 2 / span 3;
+        grid-row: 7 / span 1;
+        margin: 10px 0px;
+    }
+    
+    .aus-paragraph3 {
+        grid-column: 2 / span 3;
+        grid-row: 8 / span 1;
+    }
+    
+    .family-cousin-img {
+        grid-column: 2 / span 3;   
+        grid-row: 9 / span 1;
+        margin: 10px 0px;
+    }
+    
+    .aus-link {
+        grid-column: 5 / span 1;
+        grid-row: 10 / span 1;
+        text-align: right;
+        padding-bottom: 10px;
+        font-size: 25px;
+        font-family: 'Zen Old Mincho', serif;
+        color: #be925e;
+    }
+
+    /* The Letters */
+    .let-paragraph1 {
+        grid-column: 2 / span 3;
+        grid-row: 4 / span 1;
+        overflow: hidden;
+        padding-bottom: 10px;
+    }
+    
+    .mok-family-img {
+        grid-column: 2 / span 3;
+        grid-row: 5 / span 1;
+        margin: 10px 0px;
+    }
+    
+    .let-paragraph2 {
+        grid-column: 2 / span 3;
+        grid-row: 6 / span 1;
+    }
+    
+    .rafael-img {
+        grid-column: 2 / span 3;
+        grid-row: 7 / span 1;
+        margin: 10px 0px;
+    }
+    
+    .let-paragraph3 {
+        grid-column: 2 / span 3;
+        grid-row: 8 / span 1;
+    }
+    
+    .letter2 {
+        grid-column: 2 / span 3;
+        grid-row: 9 / span 1;
+        margin-right: 5px;
+    }
+    
+    .letter3 {
+        grid-column: 2 / span 3;
+        grid-row: 10 / span 1;
+        margin-right: 5px;
+        overflow: hidden;
+    }
+    
+    .letter4 {
+        grid-column: 2 / span 3;
+        grid-row: 11 / span 1;
+    }
+    
+    .letter5 {
+        grid-column: 2 / span 3;
+        grid-row: 12 / span 1;
+        margin-right: 5px;
+    }
+    
+    .letter6 {
+        grid-column: 2 / span 3;
+        grid-row: 13 / span 1;
+        margin-right: 5px;
+        overflow: hidden;
+    }
+    
+    .let-link {
+        grid-column: 5 / span 1;
+        grid-row: 14 / span 1;
+        text-align: right;
+        padding-bottom: 10px;
+        font-size: 25px;
+        font-family: 'Zen Old Mincho', serif;
+        color: #be925e;
+    }
+
+    /* About */
+    .portrait {
+        grid-column: 2 / span 3;
+        grid-row: 4 / span 1;
+        overflow: hidden;
+        padding-bottom: 10px;
+    }
+    
+    .about-paragraph {
+        grid-column: 2 / span 3;
+        grid-row: 5 / span 1;
+        margin: 10px 0px;
+    }
+}
+
+/* footer */
+footer {
+    background-color: #545658;
+    color: #ffffff;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+  }
